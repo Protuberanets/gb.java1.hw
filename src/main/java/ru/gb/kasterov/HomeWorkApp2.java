@@ -15,7 +15,7 @@ public class HomeWorkApp2 {
     }
 
     public static void printIsPositive(int a) {
-        if (isPositive(a)) {
+        if (a >= 0) {
             System.out.println("Число " + a + " - положительное");
         } else {
             System.out.println("Число " + a + " - отрицательное");
@@ -23,7 +23,7 @@ public class HomeWorkApp2 {
     }
 
     public static boolean isPositive(int a) {
-        return a >= 0;
+        return a < 0;
     }
 
     public static void printStringNTimes(int n, String name) {
