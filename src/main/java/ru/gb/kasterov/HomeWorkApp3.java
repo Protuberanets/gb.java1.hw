@@ -132,7 +132,7 @@ public class HomeWorkApp3 {
             System.out.println(Arrays.toString(b));
             System.arraycopy(a, 0, b, length - n, n);
         } else {
-            System.arraycopy(a, 0, b, length - (n+length), length + n);
+            System.arraycopy(a, 0, b, length - (n + length), length + n);
             System.out.println(Arrays.toString(b));
             System.arraycopy(a, length + n, b, 0, -1 * n);
         }
