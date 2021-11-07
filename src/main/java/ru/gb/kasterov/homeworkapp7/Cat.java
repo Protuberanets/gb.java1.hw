@@ -21,15 +21,13 @@ public class Cat {
     }
 
     public void eat(Plate p) {
-        if (p.getFood() >= appetite) {
+        if (!isSatiety() && p.isNotEmpty(appetite)) {
             p.decreaseFood(appetite);
             System.out.println("Котик " + getName() + " ест.");
             satiety = true;
-            System.out.println("Котик " + getName() + " сыт? " + isSatiety());
             p.info();
-            System.out.println();
-        } else {
-            System.out.println("Коту по имени " + getName() + " хватило еды? " + isSatiety());
         }
+        System.out.println("Котик " + getName() + " сыт? " + isSatiety());
+        System.out.println();
     }
 }

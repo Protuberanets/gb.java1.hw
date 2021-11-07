@@ -7,14 +7,15 @@ public class Plate {
         this.food = food;
     }
 
-    public int getFood() {
-        return food;
-    }
 
     public void decreaseFood(int n) {
-        if (food > 0) {
+        if (isNotEmpty(n)) {
             food -= n;
         }
+    }
+
+    public boolean isNotEmpty(int n) {
+        return food > 0 && food >= n;
     }
 
     public void increaseFood(int n) {
