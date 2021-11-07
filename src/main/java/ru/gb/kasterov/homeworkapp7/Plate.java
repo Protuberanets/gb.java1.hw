@@ -19,10 +19,14 @@ public class Plate {
     }
 
     public void increaseFood(int n) {
-        System.out.println();
-        System.out.println("Добавляем еду =)");
-        food += n;
+        if (n > 0) {
+            System.out.println("Добавляем еду =)");
+            food += n;
+        } else {
+            System.out.println("Кол-во добавляемой еды не может быть отрицательным или равно нулю.");
+        }
     }
+
 
     public void info() {
         System.out.println("В тарелке " + food + " еды.");
