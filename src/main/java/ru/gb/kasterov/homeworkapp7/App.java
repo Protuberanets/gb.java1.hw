@@ -2,7 +2,7 @@ package ru.gb.kasterov.homeworkapp7;
 
 public class App {
     public static void main(String[] args) {
-        Plate plate = new Plate(5);
+        Plate plate = new Plate(50);
         Cat[] cat = new Cat[5];
         cat[0] = new Cat("Барсик", 10, false);
         cat[1] = new Cat("Обжора", 20, false);

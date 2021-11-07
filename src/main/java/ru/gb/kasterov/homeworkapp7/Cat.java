@@ -26,6 +26,8 @@ public class Cat {
             System.out.println("Котик " + getName() + " ест.");
             satiety = true;
             p.info();
+        } else if (!p.isNotEmpty(appetite)) {
+            System.out.println("В тарелке мало еды.");
         }
         System.out.println("Котик " + getName() + " сыт? " + isSatiety());
         System.out.println();
